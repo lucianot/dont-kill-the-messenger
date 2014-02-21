@@ -1,0 +1,31 @@
+.parent {
+  height: 400px;
+  width: 800px;
+  background-color: green;
+  float: left;
+  overflow: auto;
+}
+
+.child {
+  background-color: red;
+  float: left;
+  height: 200px;
+  width: 300px;
+  margin: 20px;
+}
+
+.sister {
+  background-color: blue;
+  float: right;
+  height: 200px;
+  width: 300px;
+  margin: 20px;
+}
+
+.grandchild {
+  background-color: yellow;
+  float: left;
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+}
