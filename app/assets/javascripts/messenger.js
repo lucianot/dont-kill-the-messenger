@@ -1,6 +1,3 @@
-/***
- * Mediator pattern
- */
 function Messenger() {
   this.channels = {};
 
@@ -27,6 +24,3 @@ function Messenger() {
     });
   }
 }
-
-// Mediator on global scope
-var AppMessenger = new Messenger();
