@@ -1,10 +1,10 @@
 function Sister(el) {
   this.el = el;
   this.hoverInHandler = function() {
-    this.el.css('background-color', 'brown');
+    this.el.css('background', 'url("<%= asset_path('trollface.jpeg') %>")');
   }
   this.hoverOutHandler = function() {
-    this.el.css('background-color', 'blue');
+    this.el.css('background', '');
   }
 
   AppMessenger.add('hoverIn', this.hoverInHandler.bind(this));

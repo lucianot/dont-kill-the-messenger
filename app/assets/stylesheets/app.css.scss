@@ -1,29 +1,32 @@
 .parent {
-  height: 400px;
-  width: 800px;
-  background-color: green;
+  height: 300px;
+  width: 680px;
+  background-color: #ddd;
+  border: 1px solid black;
   float: left;
   overflow: auto;
 }
 
 .child {
-  background-color: red;
+  background-color: #aaa;
+  border: 1px solid black;
   float: left;
   height: 200px;
-  width: 300px;
-  margin: 20px;
+  width: 200px;
+  margin: 40px;
 }
 
 .sister {
   background-color: blue;
   float: right;
-  height: 200px;
-  width: 300px;
-  margin: 20px;
+  height: 176px;
+  width: 280px;
+  margin: 50px;
 }
 
 .grandchild {
-  background-color: yellow;
+  background-color: red;
+  border: 1px solid black;
   float: left;
   height: 100px;
   width: 100px;

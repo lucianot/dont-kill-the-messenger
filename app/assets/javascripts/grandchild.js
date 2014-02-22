@@ -1,11 +1,11 @@
 function Grandchild(el) {
   this.el = el;
   this.hoverInHandler = function() {
-    this.el.css('background-color', 'pink');
+    this.el.css('background-color', 'green');
     AppMessenger.notify('hoverIn');
   }
   this.hoverOutHandler = function() {
-    this.el.css('background-color', 'yellow');
+    this.el.css('background-color', 'red');
     AppMessenger.notify('hoverOut');
   }
 
