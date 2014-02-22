@@ -1,6 +1,6 @@
-function Grandchild(el, messenger) {
+function Grandchild(el) {
   this.el = el;
-  this.messenger = messenger || new NullMessenger();
+  this.messenger = new Messenger();
 
   this.hoverInHandler = function() {
     this.el.css('background-color', 'green');
