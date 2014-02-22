@@ -1,11 +1,7 @@
 function Parent() {
-  var child;
-}
-
-Parent.prototype.initialize = function() {
-  this.child = new Child();
-  this.child.foo();
+  var child = new Child($('.child'))
+    , sister = new Sister($('.sister'))
+  ;
 }
 
 var parent = new Parent();
-parent.initialize();

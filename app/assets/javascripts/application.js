@@ -13,7 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require messenger
 //= require grandchild
 //= require child
+//= require sister
 //= require parent
 //= require application

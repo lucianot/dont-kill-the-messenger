@@ -1,6 +1,3 @@
-function Child() {
-}
-
-Child.prototype.foo = function() {
-  alert('foo');
+function Child(el) {
+  var grandchild = new Grandchild($('.grandchild'));
 }
