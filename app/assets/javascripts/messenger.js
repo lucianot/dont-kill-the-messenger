@@ -1,6 +1,3 @@
-/***
- * Mediator pattern
- */
 function Messenger() {
   this.channels = {};
 

@@ -7,3 +7,4 @@ function Parent() {
 }
 
 var parent = new Parent();
+console.log('Injecting dependencies');
