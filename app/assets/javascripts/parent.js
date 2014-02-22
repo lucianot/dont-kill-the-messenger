@@ -4,8 +4,4 @@ function Parent() {
   ;
 }
 
-// Mediator on global scope
-var AppMessenger = new Messenger();
-
 var parent = new Parent();
-console.log('Global mediator');

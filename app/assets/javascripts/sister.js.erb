@@ -6,7 +6,4 @@ function Sister(el) {
   this.hoverOutHandler = function() {
     this.el.css('background', '');
   }
-
-  AppMessenger.add('hoverIn', this.hoverInHandler.bind(this));
-  AppMessenger.add('hoverOut', this.hoverOutHandler.bind(this));
 }
