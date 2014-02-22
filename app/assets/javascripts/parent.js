@@ -1,6 +1,8 @@
 function Parent() {
-  var child = new Child($('.child'))
-    , sister = new Sister($('.sister'))
+  // Messenger dependency injected
+  var messenger = new Messenger()
+      child = new Child($('.child'), messenger)
+    , sister = new Sister($('.sister'), messenger)
   ;
 }
 

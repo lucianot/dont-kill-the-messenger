@@ -28,5 +28,7 @@ function Messenger() {
   }
 }
 
-// Mediator on global scope
-var AppMessenger = new Messenger();
+function NullMessenger() {
+  this.add = function() {}
+  this.notify = function() {}
+}

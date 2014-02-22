@@ -1,5 +1,7 @@
-function Sister(el) {
+function Sister(el, messenger) {
   this.el = el;
+  this.messenger = messenger || new NullMessenger();
+
   this.hoverInHandler = function() {
     this.el.css('background', 'url("<%= asset_path('trollface.jpeg') %>")');
   }
@@ -7,6 +9,6 @@ function Sister(el) {
     this.el.css('background', '');
   }
 
-  AppMessenger.add('hoverIn', this.hoverInHandler.bind(this));
-  AppMessenger.add('hoverOut', this.hoverOutHandler.bind(this));
+  this.messenger.add('hoverIn', this.hoverInHandler.bind(this));
+  this.messenger.add('hoverOut', this.hoverOutHandler.bind(this));
 }
